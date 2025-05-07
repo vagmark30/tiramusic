@@ -1,0 +1,22 @@
+@startuml
+Title Tiramusic Standard Gameplay Loop
+start
+partition #LightBlue Suggestion phase {
+:Player A: Searches for music to suggest;
+:Player A: Selects a song to be added to Player B's playlist;
+:Player B's playlist is updated and is notified;
+}
+
+partition #LightYellow Monitor phase {
+  :System periodically queries Player B's listen history;
+  repeat
+    if (Song was suggested by player A?) then (Yes) 
+      :Player A gets points;
+      :Player A is notified;
+    else (no)
+    endif
+  repeatwhile (end)
+}
+
+stop
+@enduml
