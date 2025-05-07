@@ -48,8 +48,8 @@ Two players sign-up for the application, which creates a playlist on their behal
 - API First (explore and test more Apidog?)
 - Java
 - Spring?
-- Integrate with identity-service
 - Integrate with spotify web api
+- Explore Spotify auth sso, if not identity-service?
 
 ## ✅ Success evaluation
 - A deployed version the team can play
